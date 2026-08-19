@@ -1,8 +1,8 @@
-# 🔧 Ideal Oficina — Sistema de Gestão para Oficina Mecânica
+#  Ideal Oficina — Sistema de Gestão para Oficina Mecânica
 
 > Sistema de gestão para oficinas mecânicas desenvolvido em Python, MySQL e FastAPI, com interface web integrada ao backend.
 
-## 📌 Sobre o projeto
+##  Sobre o projeto
 
 O **Ideal Oficina** é uma aplicação criada para organizar e centralizar informações de uma oficina mecânica, permitindo controlar clientes, veículos, mecânicos, peças e ordens de serviço em um único sistema.
 
@@ -29,7 +29,7 @@ A aplicação foi desenvolvida como projeto prático de Engenharia de Software p
 
 ---
 
-## 🎯 Problema que o projeto resolve
+##  Problema que o projeto resolve
 
 Oficinas podem precisar controlar diversas informações simultaneamente: dados dos clientes, veículos, mecânicos, peças, serviços realizados e ordens de serviço.
 
@@ -49,9 +49,9 @@ O Ideal Oficina busca centralizar essas informações em uma aplicação que per
 
 ---
 
-## 🧩 Funcionalidades
+##  Funcionalidades
 
-### 📊 Dashboard
+###  Dashboard
 
 O dashboard apresenta indicadores gerais da oficina:
 
@@ -67,7 +67,7 @@ Quando o banco está vazio, os indicadores são apresentados como `0` e as área
 
 ---
 
-### 👤 Clientes
+###  Clientes
 
 Permite:
 
@@ -106,7 +106,7 @@ mantida para compatibilidade com a primeira versão da API.
 
 ---
 
-### 🚗 Veículos
+###  Veículos
 
 Permite:
 
@@ -140,7 +140,7 @@ A API verifica se o cliente informado existe antes de cadastrar o veículo.
 
 ---
 
-### 🔧 Mecânicos
+###  Mecânicos
 
 Permite:
 
@@ -172,7 +172,7 @@ Após o cadastro, a API retorna o código gerado para o mecânico.
 
 ---
 
-### 🔩 Peças
+###  Peças
 
 Permite:
 
@@ -203,7 +203,7 @@ Exemplo:
 
 ---
 
-### 🧾 Ordens de serviço
+###  Ordens de serviço
 
 Permite:
 
@@ -266,7 +266,7 @@ O status também pode ser atualizado posteriormente pela interface.
 
 ---
 
-## 🖥️ Interface web
+##  Interface web
 
 A interface é desenvolvida com:
 
@@ -302,7 +302,7 @@ A interface possui:
 
 ---
 
-## 🏗️ Arquitetura
+##  Arquitetura
 
 A aplicação segue o fluxo:
 
@@ -354,7 +354,7 @@ O projeto também mantém a aplicação original de terminal em `main/main.py`.
 
 ---
 
-## 🗄️ Banco de dados
+##  Banco de dados
 
 O banco utilizado pelo projeto é o **MySQL**.
 
@@ -400,7 +400,7 @@ O arquivo `database/banco.sql` contém a estrutura de criação do banco e das t
 
 ---
 
-# ⚙️ Instalação
+#  Instalação
 
 ## 1. Pré-requisitos
 
@@ -478,7 +478,7 @@ uvicorn
 
 ---
 
-# 🔐 Configuração do banco
+#  Configuração do banco
 
 ## 5. Criar o arquivo `.env`
 
@@ -515,7 +515,7 @@ Não coloque senhas, tokens ou credenciais diretamente no código Python.
 
 ---
 
-# 🗃️ Preparar o MySQL
+#  Preparar o MySQL
 
 Se você ainda não possui o banco, abra o MySQL Workbench ou outro cliente MySQL e execute:
 
@@ -542,7 +542,7 @@ Você deverá encontrar as tabelas utilizadas pelo sistema.
 
 ---
 
-# ▶️ Executar a API e a interface
+#  Executar a API e a interface
 
 Com o `venv` ativo e o `.env` configurado:
 
@@ -566,7 +566,7 @@ A interface web será carregada pelo próprio FastAPI.
 
 ---
 
-## 🚀 Executar pelo arquivo `.bat`
+##  Executar pelo arquivo `.bat`
 
 No Windows, o projeto também possui:
 
@@ -586,7 +586,7 @@ O ambiente virtual precisa existir previamente.
 
 ---
 
-# 📚 Documentação da API
+#  Documentação da API
 
 O FastAPI gera automaticamente a documentação interativa.
 
@@ -619,7 +619,7 @@ Resposta esperada:
 
 ---
 
-# 🔌 Endpoints da API
+#  Endpoints da API
 
 | Método | Endpoint | Descrição |
 |---|---|---|
@@ -641,7 +641,7 @@ Resposta esperada:
 
 ---
 
-# 🧪 Exemplos de requisições
+#  Exemplos de requisições
 
 ## Criar cliente
 
@@ -759,7 +759,7 @@ Content-Type: application/json
 
 ---
 
-# 🧱 Estrutura do projeto
+#  Estrutura do projeto
 
 ```text
 Ideal-Oficina/
@@ -870,7 +870,7 @@ Contém as credenciais locais do banco. Não deve ser versionado.
 
 ---
 
-# 🔄 Fluxo de funcionamento
+#  Fluxo de funcionamento
 
 Quando o usuário acessa a aplicação:
 
@@ -934,7 +934,7 @@ Interface atualizada
 
 ---
 
-# 🛡️ Segurança e boas práticas implementadas
+#  Segurança e boas práticas implementadas
 
 O projeto utiliza algumas práticas importantes:
 
@@ -984,7 +984,7 @@ As operações de escrita possuem tratamento para realizar rollback em caso de e
 
 ---
 
-# 🟢 Banco vazio
+#  Banco vazio
 
 A aplicação foi preparada para funcionar mesmo quando as tabelas ainda não possuem registros.
 
@@ -1014,7 +1014,7 @@ Para criar uma ordem de serviço, entretanto, é necessário primeiro cadastrar 
 
 ---
 
-# 🧰 Desenvolvimento e testes manuais
+#  Desenvolvimento e testes manuais
 
 Para testar a aplicação durante o desenvolvimento:
 
@@ -1048,7 +1048,7 @@ Fluxo recomendado para testar a aplicação do zero:
 
 ---
 
-# 🧪 Testes automatizados
+#  Testes automatizados
 
 A pasta `tests/` está preparada para receber testes automatizados, mas a versão atual ainda não possui uma suíte de testes implementada.
 
@@ -1069,7 +1069,7 @@ Uma evolução recomendada é utilizar `pytest` e testar:
 
 ---
 
-# 🐛 Solução de problemas
+#  Solução de problemas
 
 ## `ModuleNotFoundError`
 
@@ -1139,7 +1139,7 @@ http://127.0.0.1:8001
 
 ---
 
-# 🚀 Possíveis evoluções
+#  Possíveis evoluções
 
 O projeto pode evoluir para uma solução mais completa com:
 
@@ -1170,7 +1170,7 @@ O projeto pode evoluir para uma solução mais completa com:
 
 ---
 
-# 📦 Tecnologias utilizadas
+#  Tecnologias utilizadas
 
 | Tecnologia | Utilização |
 |---|---|
@@ -1188,7 +1188,7 @@ O projeto pode evoluir para uma solução mais completa com:
 
 ---
 
-# 📄 Licença
+#  Licença
 
 Este projeto é um projeto pessoal de estudos e portfólio.
 
@@ -1196,7 +1196,7 @@ Caso seja publicado no GitHub, recomenda-se adicionar uma licença explícita ao
 
 ---
 
-# 👨‍💻 Sobre o desenvolvimento
+#  Sobre o desenvolvimento
 
 O Ideal Oficina é um projeto desenvolvido para praticar o desenvolvimento de uma aplicação completa, passando pela modelagem do banco de dados, implementação das regras em Python, criação de uma API REST e integração com uma interface web.
 
