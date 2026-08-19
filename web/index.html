@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ideal Oficina</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">IO</div>
+        <div>
+          <strong>Ideal Oficina</strong>
+          <span>Gestão inteligente</span>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-item active" data-page="dashboard"><span>⌂</span> Dashboard</button>
+        <button class="nav-item" data-page="clientes"><span>♙</span> Clientes</button>
+        <button class="nav-item" data-page="veiculos"><span>▣</span> Veículos</button>
+        <button class="nav-item" data-page="ordens"><span>⚙</span> Ordens de serviço</button>
+        <button class="nav-item" data-page="mecanicos"><span>⚒</span> Mecânicos</button>
+        <button class="nav-item" data-page="pecas"><span>◇</span> Peças</button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="status-dot"></div>
+        API online
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <div class="eyebrow">GESTÃO DA OFICINA</div>
+          <h1 id="page-title">Dashboard</h1>
+        </div>
+        <div class="topbar-actions">
+          <span id="clock"></span>
+          <button class="icon-btn" id="refresh-btn" title="Atualizar">↻</button>
+        </div>
+      </header>
+
+      <section id="content" class="content"></section>
+    </main>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="toast-root" class="toast-root"></div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
